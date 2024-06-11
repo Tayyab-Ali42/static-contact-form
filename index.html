@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+
+</head>
+
+<body>
+  <main>
+    <section class="form-section">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group half-width">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group half-width">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <div class="form-group full-width">
+          <label for="query-type">Query Type</label>
+          <div class="row">
+            <div class="radio">
+              <input type="radio" name="query-type" id="query1" value="query1">
+              <p>Genrel Inquiry</p>
+            </div>
+            <div class="radio">
+              <input type="radio" name="query-type" id="query2" value="query2">
+              <p>Support Request</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group-checkbox full-width">
+          <input type="checkbox" name="accept" id="accept" required>
+          <p>I consent to being contacted by the team</p>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
